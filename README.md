@@ -39,7 +39,7 @@ Python · PostgreSQL (Neon) · dbt · GitHub Actions · Power BI · LightGBM + S
 | Lo demostrado | Medido |
 |---|---|
 | Tasas oficiales del INEC reproducidas desde 1,16 M de registros | **al décimo** |
-| Modelo de informalidad en meses que nunca vio | **AUC 0,910** · calibrado al 0,1 pp |
+| Modelo de informalidad en 6 meses que nunca vio | **AUC 0,910** · tasa estimada a 0,4 pp de la real |
 | Pronóstico del desempleo con backtesting | **0,24 pp** de error, 26 % mejor que la referencia |
 | Tests de datos y de código | **40 dbt + 45 Python**, en verde en cada push |
 | Coste de la plataforma | **0 USD** |

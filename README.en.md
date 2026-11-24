@@ -63,7 +63,6 @@ Python · PostgreSQL (Neon) · dbt · GitHub Actions · Power BI · LightGBM + S
 | 📈 [PORTAFOLIO-ML](https://github.com/GUAR-NIX/PORTAFOLIO-ML/blob/main/README.en.md) | Machine learning with real data: CLV, demand, fraud, computer vision, recommender | scikit-learn, Python, Jupyter |
 | 🗄️ [PORTAFOLIO-SQL](https://github.com/GUAR-NIX/PORTAFOLIO-SQL/blob/main/README.en.md) | Data warehouses with SCD2 and incremental loads, graphs, RFM and cohorts, performance tuning | SQL Server, PostgreSQL |
 | 🐍 [PORTAFOLIO-PYTHON](https://github.com/GUAR-NIX/PORTAFOLIO-PYTHON/blob/main/README.en.md) | Analysis of public data: Ecuador's climate, labor market (ENEMDU), seismicity, crime | Python, pandas, Jupyter |
-| 🛡️ [HERRAMIENTAS-DE-CIBERSEGURIDAD](https://github.com/GUAR-NIX/HERRAMIENTAS-DE-CIBERSEGURIDAD) | Cybersecurity tools | Security |
 
 ---
 

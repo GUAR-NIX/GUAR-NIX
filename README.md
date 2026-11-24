@@ -25,6 +25,7 @@ GitHub Actions · Docker · Prometheus + Grafana · SIEM Wazuh · Proxmox Backup
 | Endurecimiento de servidores (Lynis) | **63 → 83** |
 | Simulacros de recuperación ante desastres | **6 / 6** superados |
 
+🎬 [Video de demostración (3:26)](https://youtu.be/rV9RyCcJ3Nk) ·
 📖 [Guía completa fase por fase](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/GUIA-DEL-PROYECTO.md) ·
 🔎 [Informe del incidente simulado](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/incidents/INC-0001.md)
 

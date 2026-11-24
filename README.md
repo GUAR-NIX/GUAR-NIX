@@ -30,12 +30,32 @@ GitHub Actions · Docker · Prometheus + Grafana · SIEM Wazuh · Proxmox Backup
 
 ---
 
+## 📊 Proyecto destacado de datos: [Observatorio laboral del Ecuador](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec)
+
+**De los microdatos de la encuesta de empleo del INEC a un modelo de machine learning en producción.**
+
+Python · PostgreSQL (Neon) · dbt · GitHub Actions · Power BI · LightGBM + SHAP · FastAPI · Docker · MLflow · Streamlit
+
+| Lo demostrado | Medido |
+|---|---|
+| Tasas oficiales del INEC reproducidas desde 1,16 M de registros | **al décimo** |
+| Modelo de informalidad en meses que nunca vio | **AUC 0,910** · calibrado al 0,1 pp |
+| Pronóstico del desempleo con backtesting | **0,24 pp** de error, 26 % mejor que la referencia |
+| Tests de datos y de código | **40 dbt + 45 Python**, en verde en cada push |
+| Coste de la plataforma | **0 USD** |
+
+🧮 [App en vivo](https://observatorio-laboral-ec.streamlit.app) ·
+📈 [Tablero público](https://datastudio.google.com/reporting/a932a4c2-ecc6-4148-afd1-df75157ebdb0) ·
+📖 [Guía paso a paso](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/blob/main/observatorio-laboral-ec/docs/GUIA_PASO_A_PASO.md)
+
+---
+
 ## 📂 Portafolio
 
 | Proyecto | De qué trata | Tecnologías |
 |---|---|---|
 | 🏢 [ANDES-HOMELAB](https://github.com/GUAR-NIX/ANDES-HOMELAB) | Infraestructura empresarial completa: red, identidad, IaC, SIEM y recuperación ante desastres | Proxmox, OPNsense, AD, Terraform, Ansible, Wazuh |
-| ☁️ [PORTAFOLIO-CLOUD](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD) | Ingeniería de datos y cloud: orquestación, streaming, lakehouse, Kubernetes y serverless | Airflow, Dagster + dbt, Spark, Iceberg + Trino, Helm, AWS + Terraform |
+| ☁️ [PORTAFOLIO-CLOUD](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD) | Ingeniería de datos y cloud: el observatorio laboral de punta a punta, orquestación, streaming, lakehouse, Kubernetes y serverless | dbt, LightGBM, FastAPI, Airflow, Dagster, Spark, Iceberg + Trino, Helm, AWS + Terraform |
 | 🤖 [PORTAFOLIO-IA](https://github.com/GUAR-NIX/PORTAFOLIO-IA) | IA aplicada con LLM locales: agente con herramientas, RAG de la ley laboral del Ecuador, extracción de facturas | Ollama, RAG, Python |
 | 📈 [PORTAFOLIO-ML](https://github.com/GUAR-NIX/PORTAFOLIO-ML) | Machine learning con datos reales: CLV, demanda, fraude, visión por computadora, recomendador | scikit-learn, Python, Jupyter |
 | 🗄️ [PORTAFOLIO-SQL](https://github.com/GUAR-NIX/PORTAFOLIO-SQL) | Data warehouses con SCD2 y carga incremental, grafos, RFM y cohortes, tuning de rendimiento | SQL Server, PostgreSQL |
@@ -75,6 +95,11 @@ GitHub Actions · Docker · Prometheus + Grafana · SIEM Wazuh · Proxmox Backup
 ![Apache Spark](https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![LightGBM](https://img.shields.io/badge/LightGBM-2C7BB6?style=flat-square)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
 ---

@@ -25,8 +25,8 @@ Ecuador · [LinkedIn](https://www.linkedin.com/in/erick-g-571a7b3b4)
 [![CI](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec.yml/badge.svg)](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec.yml)
 [![Weekly pipeline](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec-pipeline.yml/badge.svg)](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec-pipeline.yml)
 
-Public survey microdata to PostgreSQL and dbt, run every week by GitHub Actions on free cloud tiers: idempotent ingestion,
-40 dbt tests, freshness checks, a containerized API and a public app.
+Public survey microdata to PostgreSQL and dbt, run every week by GitHub Actions on free cloud tiers: incremental dbt,
+37 dbt tests with audited publication, freshness checks, a containerized API and a public app.
 
 [Live app](https://observatorio-laboral-ec.streamlit.app/?lang=en) ·
 [Code](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec/src/observatorio) ·

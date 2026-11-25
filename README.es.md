@@ -46,7 +46,7 @@ Python · PostgreSQL (Neon) · dbt · GitHub Actions · Power BI · LightGBM + S
 | Tasas oficiales del INEC reproducidas desde los microdatos | **20 de 20**, al décimo (5 meses) |
 | Modelo de informalidad en 6 meses que nunca vio | **AUC 0,910** · tasa estimada a 0,4 pp de la real |
 | Pronóstico del desempleo con backtesting | **0,24 pp** de error, 26 % mejor que la referencia |
-| Tests automáticos | **50** de Python y **40** de dbt (estos, en el pipeline semanal) |
+| Tests automáticos | **58** de Python y **37** de dbt (estos, en el pipeline semanal) |
 | Coste de la plataforma | **0 USD** |
 
 🧮 [App en vivo](https://observatorio-laboral-ec.streamlit.app) ·

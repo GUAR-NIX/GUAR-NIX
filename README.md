@@ -6,13 +6,17 @@
 
 Ecuador · [LinkedIn](https://www.linkedin.com/in/erick-g-571a7b3b4)
 
-| Measured result | Project | Evidence |
-|---|---|---|
-| **7 min 19 s** to rebuild a destroyed server from Git with Terraform and Ansible | ANDES-HOMELAB | [ADR-0005](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/adr/ADR-0005-terraform-bpg.md) · [script](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/scripts/reconstruir-servidor.sh) |
-| **6 of 6** disaster recovery drills passed; VM restored in 5 min 19 s | ANDES-HOMELAB | [Drill log](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/dr/resultados-simulacros.md) |
-| **−79%** vulnerabilities (19,784 → 4,062) in one patching cycle | ANDES-HOMELAB | [Guide, phase 7 (Spanish)](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/GUIA-DEL-PROYECTO.md) |
-| **0 errors in 39,842 requests** during a Kubernetes rolling upgrade (14 errors before the drain fix) | Climate API | [Report](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/blob/main/kubernetes-api-clima/reports/rolling_update.json) |
-| **20 of 20** official labor rates reproduced by a weekly automated pipeline | Labor Observatory | [Workflow](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec-pipeline.yml) |
+**Featured:** [ANDES-HOMELAB](https://github.com/GUAR-NIX/ANDES-HOMELAB), an infrastructure, security and recovery lab ·
+[Ecuador Labor Observatory](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec), an automated data platform
+([live app](https://observatorio-laboral-ec.streamlit.app/?lang=en))
+
+| Measured result | Evidence |
+|---|---|
+| **7 min 19 s** to rebuild a destroyed lab server from Git with Terraform and Ansible | [ANDES: decision](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/adr/ADR-0005-terraform-bpg.md), [script](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/scripts/reconstruir-servidor.sh) |
+| **6 of 6** disaster recovery drills passed; VM restored in 5 min 19 s | [ANDES: drill log](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/dr/resultados-simulacros.md) |
+| **−79%** vulnerabilities (19,784 → 4,062) in one patching cycle | [ANDES: guide](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/GUIA-DEL-PROYECTO.md) |
+| **0 errors in 39,842 requests** during a Kubernetes rolling upgrade (14 errors before the drain fix) | [Climate API: report](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/blob/main/kubernetes-api-clima/reports/rolling_update.json) |
+| **20 of 20** official labor rates reproduced and tested by a weekly pipeline | [Observatory: runs](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec-pipeline.yml) |
 
 ## Featured projects
 

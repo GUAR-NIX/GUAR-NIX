@@ -2,87 +2,87 @@
 
 # Erick Guarnizo
 
-**Cloud & DevOps Engineer focused on infrastructure automation, Linux, security and reliability.**
+**Data Engineer focused on reliable pipelines, data quality and reproducible infrastructure.**
 
 Ecuador · [LinkedIn](https://www.linkedin.com/in/erick-g-571a7b3b4)
 
-**Featured:** [ANDES-HOMELAB](https://github.com/GUAR-NIX/ANDES-HOMELAB), an infrastructure, security and recovery lab ·
-[Ecuador Labor Observatory](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec), an automated data platform
-([live app](https://observatorio-laboral-ec.streamlit.app/?lang=en))
+**Featured:** [Ecuador Labor Observatory](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec), an automated data platform
+([live app](https://observatorio-laboral-ec.streamlit.app/?lang=en)) ·
+[GitHub activity streaming](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/streaming-github-redpanda-spark), Kafka API, Spark and Delta Lake
 
 | Measured result | Evidence |
 |---|---|
-| **7 min 19 s** to rebuild a destroyed lab server from Git with Terraform and Ansible | [ANDES: decision](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/adr/ADR-0005-terraform-bpg.md), [script](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/scripts/reconstruir-servidor.sh) |
-| **6 of 6** disaster recovery drills passed; VM restored in 5 min 19 s | [ANDES: drill log](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/dr/resultados-simulacros.md) |
-| **−79%** vulnerabilities (19,784 → 4,062) in one patching cycle | [ANDES: guide](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/GUIA-DEL-PROYECTO.md) |
-| **0 errors in 39,842 requests** during a Kubernetes rolling upgrade (14 errors before the drain fix) | [Climate API: report](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/blob/main/kubernetes-api-clima/reports/rolling_update.json) |
 | **20 of 20** official labor rates reproduced and tested by a weekly pipeline | [Observatory: runs](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec-pipeline.yml) |
+| **0 duplicates and 0 lost** in bronze and silver after 3 `docker kill` (2.9 million messages) | [Streaming: verification](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/blob/main/streaming-github-redpanda-spark/reports/metricas/recuperacion/verificacion.json) |
+| **41.2 million** trips loaded; source = fact + quarantine, difference **0** in 12 months | [Taxi warehouse: reconciliation](https://github.com/GUAR-NIX/PORTAFOLIO-SQL/blob/main/dw-taxis-nyc-sqlserver/reports/tablas/cuadre_fuente.csv) |
+| **410** backfill runs and 6,405 logged quality checks | [Airflow: results](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/blob/main/airflow-apis-postgres/reports/resultados.json) |
+| **92.50–99.96%** fewer pages read in nine query tuning experiments | [SQL tuning: experiments](https://github.com/GUAR-NIX/PORTAFOLIO-SQL/blob/main/tuning-sqlserver-citibike/reports/tablas/experimentos_tuning.csv) |
 
 ## Featured projects
-
-### [ANDES-HOMELAB](https://github.com/GUAR-NIX/ANDES-HOMELAB) · infrastructure, security and recovery
-
-[![CI](https://github.com/GUAR-NIX/ANDES-HOMELAB/actions/workflows/ci.yml/badge.svg)](https://github.com/GUAR-NIX/ANDES-HOMELAB/actions/workflows/ci.yml)
-
-A **lab** that reproduces a small company's infrastructure on one laptop: 10 VMs on Proxmox, 6 segmented VLANs, Active
-Directory, internal PKI, Terraform, Ansible, GitHub Actions, Prometheus and Grafana, a Wazuh SIEM and tested backups.
-
-[Code](https://github.com/GUAR-NIX/ANDES-HOMELAB/tree/main/ansible) ·
-[Architecture](https://github.com/GUAR-NIX/ANDES-HOMELAB#architecture) ·
-[Decisions](https://github.com/GUAR-NIX/ANDES-HOMELAB/tree/main/docs/adr) ·
-[Incident report](https://github.com/GUAR-NIX/ANDES-HOMELAB/blob/main/docs/incidents/INC-0001.md) ·
-[Demo video, 3:26](https://youtu.be/rV9RyCcJ3Nk)
 
 ### [Ecuador Labor Observatory](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec) · automated data platform
 
 [![CI](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec.yml/badge.svg)](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec.yml)
 [![Weekly pipeline](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec-pipeline.yml/badge.svg)](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/observatorio-laboral-ec-pipeline.yml)
 
-Public survey microdata to PostgreSQL, dbt, a containerized API and a public app, run by GitHub Actions on free cloud
-tiers, with a model quality gate, 40 dbt tests and a drift monitor.
+Public survey microdata to PostgreSQL and dbt, run every week by GitHub Actions on free cloud tiers: idempotent ingestion,
+40 dbt tests, freshness checks, a containerized API and a public app.
 
 [Live app](https://observatorio-laboral-ec.streamlit.app/?lang=en) ·
 [Code](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec/src/observatorio) ·
+[dbt models](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec/dbt) ·
 [Tests](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec/tests) ·
 [Architecture](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec#architecture) ·
 [Decisions](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/observatorio-laboral-ec/docs/adr)
 
+### [GitHub activity streaming](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/streaming-github-redpanda-spark) · Redpanda, Spark, Delta Lake
+
+[![CI](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/streaming-github-redpanda-spark.yml/badge.svg)](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/actions/workflows/streaming-github-redpanda-spark.yml)
+
+11.4 million public events replayed through bronze, silver and gold layers with event-time windows, bounded deduplication
+and idempotent writes. Local, on one node.
+
+[Code](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/streaming-github-redpanda-spark/src/streaming_gh) ·
+[Tests](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/streaming-github-redpanda-spark/tests) ·
+[Measurements](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/streaming-github-redpanda-spark/reports)
+
 ## What I bring to a team
 
-- **Rebuildable infrastructure.** Servers are declared in Terraform and configured with Ansible; a rebuild is a
-  timed, repeatable procedure.
-- **Reliability that is measured.** Baselines before changes, timed recovery drills, load tests and a 99% availability
-  objective in Prometheus.
-- **Security as part of the work.** Deny-by-default networks, hardening, patching, secret scanning in CI and a
-  simulated incident handled end to end with a written report.
-- **Documentation others can operate from.** Architecture decision records, runbooks, a change log and what failed.
+- **Pipelines that can run twice.** Idempotent loads, watermarks, atomic partition switches and backfills that resume.
+- **Data that reconciles.** Control totals against the source, quarantine with the reason, and tests that stop publication.
+- **Infrastructure I can operate.** Terraform, Ansible, Docker, CI and recovery drills, shown in
+  [ANDES-HOMELAB](https://github.com/GUAR-NIX/ANDES-HOMELAB): a lab server rebuilt from Git in 7 min 19 s and 6 of 6 recovery drills passed.
+- **Decisions in writing.** Architecture decision records, what failed and how each result was measured.
 
-## More cloud and DevOps work
+## More data engineering work
 
 | Project | Stack | Measured |
 |---|---|---|
-| [Climate API on Kubernetes](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/kubernetes-api-clima) | kind, Helm, HPA, Prometheus, Grafana | 68.5 → 476.3 requests/s from 1 to 4 replicas |
-| [Serverless earthquake alerts](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/serverless-sismos-localstack) | Terraform, Lambda, DynamoDB, SNS (AWS emulated with LocalStack) | 2,080 repeated events absorbed with 0 duplicates |
-| [GitHub activity streaming](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/streaming-github-redpanda-spark) | Redpanda, Spark, Delta Lake | 0 duplicates and 0 lost after 3 `docker kill` |
-| [Scheduled ingestion with Airflow](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/airflow-apis-postgres) | Airflow, PostgreSQL, Docker Compose | 410 backfill runs completed |
+| [Scheduled ingestion](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/airflow-apis-postgres) | Airflow, PostgreSQL, Docker Compose | 384 daily and 26 yearly runs, with checks that stop the DAG |
+| [Lakehouse](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/lakehouse-iceberg-trino-nessie) | Iceberg, Trino, Nessie, MinIO | A defective day fails 3 of 7 checks and never reaches `main` |
+| [Asset-based data stack](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/modern-data-stack-dagster-dbt) | Dagster, dbt, DuckDB, MinIO | 177.5 million observations, 45 quality checks |
+| [NYC taxi warehouse](https://github.com/GUAR-NIX/PORTAFOLIO-SQL/tree/main/dw-taxis-nyc-sqlserver) | SQL Server, columnstore, partitioning | Partition `SWITCH` in 12–221 ms |
+| [SQL performance lab](https://github.com/GUAR-NIX/PORTAFOLIO-SQL/tree/main/tuning-sqlserver-citibike) | SQL Server, execution plans | 260 measured runs |
+| [Serverless earthquake alerts](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD/tree/main/serverless-sismos-localstack) | Terraform, Lambda, DynamoDB (AWS emulated) | 2,080 repeated events, 0 duplicates |
 
-These run locally or on emulators; the repositories state what was deployed and what was not.
+Except for the observatory, these run locally or on emulators; each repository states what was deployed and what was not.
 
-## Secondary skills: data engineering and AI
+## Repositories
 
 | Repository | Focus |
 |---|---|
-| [PORTAFOLIO-CLOUD](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD) | Seven cloud, DevOps and data engineering projects |
+| [PORTAFOLIO-CLOUD](https://github.com/GUAR-NIX/PORTAFOLIO-CLOUD) | Seven data engineering and cloud projects |
 | [PORTAFOLIO-SQL](https://github.com/GUAR-NIX/PORTAFOLIO-SQL) | Data warehouses and query tuning in SQL Server and PostgreSQL |
 | [PORTAFOLIO-PYTHON](https://github.com/GUAR-NIX/PORTAFOLIO-PYTHON) | Reproducible analysis of public data |
+| [ANDES-HOMELAB](https://github.com/GUAR-NIX/ANDES-HOMELAB) | Infrastructure, security and disaster recovery lab |
 | [PORTAFOLIO-ML](https://github.com/GUAR-NIX/PORTAFOLIO-ML) | Machine learning with temporal validation and APIs |
 | [PORTAFOLIO-IA](https://github.com/GUAR-NIX/PORTAFOLIO-IA) | Local LLM applications evaluated against baselines |
 
 ## Tools used in these repositories
 
-**Infrastructure:** Linux (Ubuntu), Windows Server, Proxmox VE, OPNsense, WireGuard ·
-**Automation:** Terraform, Ansible, GitHub Actions, Docker, Kubernetes, Helm ·
-**Security and observability:** Wazuh, Trivy, gitleaks, Prometheus, Grafana ·
-**Languages and data:** Python, Bash, SQL, PostgreSQL, SQL Server, Airflow, Spark, dbt
+**Languages:** Python, SQL, T-SQL, Bash ·
+**Data:** PostgreSQL, SQL Server, dbt, Airflow, Dagster, Spark, Redpanda (Kafka API), Delta Lake, Iceberg, Trino, DuckDB ·
+**Infrastructure:** Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Linux ·
+**Security and observability:** Wazuh, Trivy, gitleaks, Prometheus, Grafana
 
 Documentation inside the projects is mostly in Spanish; every project page has an English version or summary.

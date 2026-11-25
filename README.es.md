@@ -2,7 +2,9 @@
 
 # Hola, soy Erick Guarnizo 👋
 
-**Infraestructura · Ciberseguridad · DevOps · Datos e IA** — Ecuador 🇪🇨
+**Ingeniero de datos: pipelines fiables, calidad de datos e infraestructura reproducible** — Ecuador 🇪🇨
+
+Infraestructura · Ciberseguridad · DevOps · Datos e IA · [LinkedIn](https://www.linkedin.com/in/erick-g-571a7b3b4)
 
 Construyo plataformas completas y las demuestro con datos medidos: redes segmentadas, identidad, automatización con
 código, detección de ataques, copias que se prueban de verdad… y, del otro lado, pipelines de datos, modelos de
